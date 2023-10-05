@@ -1,0 +1,182 @@
+\documentclass[pdf,aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usetheme{Madrid}
+\usecolortheme{default}
+\usepackage{graphicx}
+\usepackage{multicol}
+\useinnertheme{circles}
+\usepackage{mathrsfs}
+ \usepackage[all]{xy}
+ \usepackage[document]{ragged2e}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{subfig}
+
+\hypersetup{urlcolor=cyan}
+
+
+\definecolor{Logo1}{rgb}{0.11, 0.21, 0.18} %Uvita
+\definecolor{Logo3}{rgb}{0.12, 0.3, 0.17}%Verdesito
+\definecolor{Logo2}{rgb}{1.0, 0.75, 0.0}%Amarillito
+
+\setbeamercolor*{palette primary}{bg=Logo1, fg=white}
+\setbeamercolor*{palette secondary}{bg=Logo2, fg=white}
+\setbeamercolor*{palette tertiary}{bg=white, fg=Logo3}
+\setbeamercolor*{palette quaternary}{bg=Logo1,fg=white}
+\setbeamercolor{structure}{fg=Logo3} 
+\setbeamercolor{section in toc}{fg=Logo3} 
+
+
+
+
+ 
+\titlegraphic{\includegraphics[width=2.6cm]{seifmlogo2.jpeg}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title[What is Spacetime?] %optional
+{What is Spacetime?\\
+\small{Topological \& Geometric Aspects}}
+
+
+\author[\href{https://tomascampo.github.io/}{Tomás D. Campo}]
+{\href{https://tomascampo.github.io/}{Tomás D. Campo}}
+
+
+\institute[\href{mailto:tomascampo.rp@gmail.com}{tomascampo.rp@gmail.com}]
+{
+  \textsc{\href{https://seinfismat.github.io/}{SEIFM}}\\
+  Bogotá, Colombia.
+}
+
+
+\date[\today] % (optional)
+{\today}
+
+
+\logo{\includegraphics[height=.4cm]{SEIFM02.jpg}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-----------------------------------------------------
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Tabla de Contenidos}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+\begin{document}
+
+\frame{\titlepage}
+
+
+%This block of code is for the table of contents after
+%the title page
+\begin{frame}
+\frametitle{Tabla de contenidos}
+\tableofcontents
+\end{frame}
+
+
+
+
+
+%%%%%%%%%%%%%%%% SECCIÓN-1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\section{Sección 1}
+
+
+%En estas diapositivas se usa el comando \pause para dar efecto de aparición a lo cuadros.
+
+\begin{frame}{Primer tema de la sección}
+\begin{block}{Definición 1}
+
+\end{block}
+\pause
+\begin{block}{Definición 2}
+
+\end{block}
+\pause
+\begin{block}{Teorema 1}
+
+\end{block}
+\end{frame}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%% SECCIÓN-2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Sección 2}
+
+
+\begin{frame}{Frame con columnas con imágenes de muestra}
+
+%------------------------------------------------------------
+
+\begin{columns}
+\begin{column}{8cm}
+Columna 1. 
+   \begin{figure}
+ \centering
+  \subfloat[]{
+   \label{vartop}
+    \includegraphics[width=0.32\textwidth]{trmaps.png}}
+  \subfloat[]{
+   \label{vardif}
+    \includegraphics[width=0.45\textwidth]{fibrebundle.png}}
+ \label{100tifikos}
+\end{figure}
+
+\end{column}
+\begin{column}{6cm}
+Columna 2.
+   
+\end{column}
+    \end{columns}
+
+%------------------------------------------------------------
+
+\end{frame}
+
+
+
+
+
+%Conclusiones----------------------------------------------------------
+
+\section{Conclusiones}
+
+\begin{frame}{Conclusiones}
+\begin{enumerate}
+    \item Papi Hilbert.
+    \item Einstein baboso.
+\end{enumerate}
+    
+\end{frame}
+
+
+\section{Bibliografía}%Ejemplo de bibliografía%
+ 
+\begin{frame}{Bibliografía}
+    \bibliographystyle{plain}
+\begin{thebibliography}{99}
+   \bibitem{1} Arhangel’skii, A.; Tkachenko, M. (2008). Topological Groups and Related Structures. Atlantis Press/World Scientific.
+   \bibitem{2} Borel, A. (1954). Topics in the Homology Theory of Fibre Bundles. Springer-Verlag.
+   \bibitem{3} Hatcher, A. (2001). Algebraic Topology. Cornell University. 
+   \bibitem{4} Husemoller, D. (1994). Fibre Bundles. Springer-Verlag.
+   \bibitem{5} Lubkin, S. (1961). Theory of Covering Spaces. Transactions of the American Mathematical Society, Vol. 104, No. 2 (Aug., 1962), pp. 205-238
+   \bibitem{7} Riehl, E. (2014). Category Theory in Context. Cambridge University Press.
+   \bibitem{8} Serre, J-P. Homotopie, Revêtement, Espaces Fibrés. Université Henri Poincaré - Nancy I.
+\end{thebibliography}
+\end{frame}
+
+
+
+\end{document}
